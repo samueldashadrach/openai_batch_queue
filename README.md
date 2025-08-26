@@ -33,5 +33,3 @@ Technical
  - Use bash and perl everywhere. Using Python or JS or similar risks causing out-of-memory when dataset is large.
  - Use bash pipelines to process everything to avoid making lots of writes to disk and hitting disk I/O limit.
  - Use parallel to easily scale up or down depending on number of cores on your machine.
-
-
