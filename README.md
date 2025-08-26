@@ -5,15 +5,15 @@
 Disclaimer
  - I don't use this repo myself. The repo I use is much more chaotic. I wanted to publish a sanitised repo for public use. I won't update this much.
 
+Use OpenAI Batch API for embeddings to process a large amount of plaintext, while following all their rate limits.
+
 #### How to run
 
-use `openai_gen.sh` to generate the files in openai format.
+use `openai_gen.sh` to chunk the plaintext and convert to openai format.
 
 use `orchestrate.sh` to merge 2048 strings per request, upload the files, start batches, log openai queue as it processes, download outputs, unmerge 2048 strings per request.
 
-#### Why?
-
-Queue files for OpenAI Batch API while handling all their rate limits.
+#### Approach used
 
 Rate limits OpenAI enforces for embeddings batch API
  - 100 MB max per file
